@@ -579,3 +579,117 @@ header{
     object-fit: cover;
     z-index: -1;
 }
+.single-post-text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--bg-color);
+    padding: 20px;
+    background: linear-gradient
+    (1deg,
+    hsl(128 26% 55% / 100%) 14%,
+    hsl(128 24% 49% / 4%) 64%
+    );
+    backdrop-filter: blur(2px);
+
+}
+.post-data h2{
+    font-size: 0.94rem;
+    margin-bottom: 6px;
+}
+.post-data .read{
+    color: var(--bg-color);
+}
+.single-post a i{
+    color: var(--bg-color); 
+    padding: 8px;
+    border: 1px solid var(--bg-color);
+    border-radius: 50%;
+}
+.links{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    gap: 8px;
+}
+.link-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid var(--text-neutral-2);
+    padding: 8px 14px;
+    border-radius: 1.5rem;
+}
+.link-box h3{
+    font-size: 0.87rem;
+    font-weight: 600;
+}
+.link-box a i {
+    background: var(--second-color);
+    color: var(--main-color);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.link-box a i:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+    transition: all 0.4s ease-in-out;
+}
+.footer{
+    background: var(--text-neutral-3);
+    padding: 50px 0;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-box h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.footer-box h3 span{
+    color: var(--main-color);
+}
+.footer-link{
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 1rem;
+}
+.footer-link::before{
+content: '';
+width: 8px;
+height: 8px;
+background: var(--main-color);
+border-radius: 50%;
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+.footer-link:hover{
+    color: var(--main-color);
+    transition: 0.3s;
+}
+.footer-center{
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+
+}
+.footer-center p{
+    text-align: center;
+    margin-bottom: 1.2rem;
+    
+}
